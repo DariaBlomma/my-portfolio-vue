@@ -3,13 +3,17 @@
           v-if="index === activeSlide"
           :class="['slide', {'active': index === activeSlide}]"
         >
-          <button :class="['btn-img', slide['btn-img-class']]"></button>
-          <button v-if="showSlideInfo" :class="['btn-info', slide['btn-iinfo-class']]">
+          <button
+            :class="['btn-img', slide['btn-img-class']]"
+            @mouseenter="openSlideInfo"
+            @mouseleave="hideSlideInfo"
+          />
+          <button v-if="showSlideInfo" :class="['btn-info', slide['btn-info-class']]">
             <h2 class="secondary-title">{{slide.title}}</h2><br>
             <div v-if="slide.description" class="description">
               <b>Краткое описание:</b>
               <span v-if="slide.description.text" >{{slide.description.text}}</span>
-              <ul v-if="slide.description.list.length">
+              <ul v-if="slide.description.list">
                 <li v-for="item in slide.description.list" :key="item">
                   {{item}}
                 </li>
@@ -45,6 +49,14 @@ export default {
     return {
       showSlideInfo: false,
     };
+  },
+  methods: {
+    openSlideInfo() {
+      this.showSlideInfo = true;
+    },
+    hideSlideInfo() {
+      this.showSlideInfo = false;
+    },
   },
 };
 </script>
