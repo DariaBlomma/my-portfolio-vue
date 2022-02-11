@@ -2,6 +2,9 @@
   "name": "my-portfolio-vue",
   "version": "0.1.0",
   "private": true,
+  "enginnes": {
+    "node": "^14.0.0"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

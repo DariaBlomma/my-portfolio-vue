@@ -4,26 +4,26 @@
 @import "partials/index.scss";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
 	height: 100%;
 }
 body {
-		margin: 0;
-		display: flex; 
-		flex-direction: column;
-		height: 100%;
-		background-color: #E5E5E5;
+	margin: 0;
+	display: flex; 
+	flex-direction: column;
+	height: 100%;
+	background-color: #E5E5E5;
 }
 
 header {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 footer{

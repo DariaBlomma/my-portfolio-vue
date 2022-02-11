@@ -8,11 +8,19 @@
             @mouseenter="openSlideInfo"
             @mouseleave="hideSlideInfo"
           />
-          <button v-if="showSlideInfo" :class="['btn-info', slide['btn-info-class']]">
+          <button
+            v-if="showSlideInfo"
+            :class="['btn-info', slide['btn-info-class']]"
+          >
             <h2 class="secondary-title">{{slide.title}}</h2><br>
             <div v-if="slide.description" class="description">
-              <b>Краткое описание:</b>
-              <span v-if="slide.description.text" >{{slide.description.text}}</span>
+              <b>Краткое описание: </b>
+              <span
+                v-if="slide.description.text"
+                class='short-description'
+              >
+                {{slide.description.text}}
+              </span>
               <ul v-if="slide.description.list">
                 <li v-for="item in slide.description.list" :key="item">
                   {{item}}

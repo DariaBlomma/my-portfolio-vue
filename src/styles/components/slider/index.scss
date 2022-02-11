@@ -1,7 +1,6 @@
 @import "slider-imgs.scss";
 @import "btns.scss";
-/* last edited 18.11.21 */
-/* высоста изображений строго 460px */
+
 .slideshow-container {
 	width: 100%;
 }
@@ -34,7 +33,7 @@
     background-color: #000000;
 }
 
-span {
+.dot {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -42,7 +41,7 @@ span {
     margin-right: 10px;
     cursor: pointer;
 }
-span:last-child{
+.dot:last-child{
     margin-right: 0;
 }
 

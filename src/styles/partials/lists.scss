@@ -1,10 +1,14 @@
 ul {
 	width: 600px;
-    margin: auto;
-    text-align: left;
+  margin: auto;
+  text-align: left;
 }
 
 .big-list {
 	width: 825px;
 	font-size: 15px;
+}
+
+.no-list-type {
+	list-style-type: none;
 }
