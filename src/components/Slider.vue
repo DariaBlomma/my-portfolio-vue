@@ -87,6 +87,7 @@ export default {
             'Vue router',
             'Vue draggable',
             'БЭМ',
+            'Heroku deploy',
           ],
           links: {
             site: 'https://daria-blomma-tutoring.herokuapp.com',
