@@ -2,7 +2,7 @@
   "name": "my-portfolio-vue",
   "version": "0.1.0",
   "private": true,
-  "enginnes": {
+  "engines": {
     "node": "^14.0.0"
   },
   "scripts": {
